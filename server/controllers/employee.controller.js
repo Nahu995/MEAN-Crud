@@ -37,7 +37,7 @@ employeeCtrl.deleteEmployee = async (req, res) => {
   const { id } = req.params;
   await Employee.findByIdAndRemove(id)
   res.json({
-    status: 'Employee delete'
+    status: 'Employee delete' 
   })
   
 };
